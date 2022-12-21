@@ -1,7 +1,7 @@
 import Devour from './assets/Devour.jpg'
 import Monster from './assets/Monster-Hunter.jpg'
 import Fifa from './assets/fifa-23.jfif'
-import Forza from './assets/Forza.jpg'
+import Forza from './assets/forza.jpg'
 import Microsoft from './assets/microsoft.jpg'
 import Truck from './assets/truck.jpg'
 
