@@ -4,8 +4,9 @@ import Fifa from './assets/fifa-23.jfif'
 import Forza from './assets/forza.jpg'
 import Microsoft from './assets/microsoft.jpg'
 import Truck from './assets/truck.jpg'
+import Gallery from './components/Gallery'
+import Promotion from './components/Promotion'
 
-import { BsFillCircleFill } from 'react-icons/bs'
 
 
 export default function App() {
@@ -42,45 +43,14 @@ export default function App() {
       </div>
 
       <div className='grid grid-cols-4 gap-3 cursor-pointer'>
-        <div>
-          <img src={Microsoft} width="230" />
-          <p>Microsoft Flight Simulator 40th...</p>
-          <span> R$249,95</span>
-        </div>
-        <div>
-          <div>
-            <img src={Fifa} width="230" />
-            <div className=" flex ml-1 bg-black absolute bottom-15 top-[600px] 
-            items-center gap-2 w-[100px] pl-1">
-              <BsFillCircleFill color='red' />
-              <span className='uppercase'>Ao vivo</span>
-            </div>
-          </div>
+        <Gallery srcImage={Microsoft} Price={249.99} Name={'Microsoft Simulator 40th...'} />
 
-          <p className='uppercase'>EA esports™ Fifa 23</p>
+        <Promotion srcImage={Fifa} Price={299} Name={'EA SPORTS™ FIFA 23'} Percentage={60} />
 
-          <div className='bg-slate-900' >
-            <span className='bg-green-500'>
-              -60%
-              <span className='line-through text-md bg-slate-900  pl-2'>
-                R$ 299
-              </span>
-              <span className='bg-slate-900 text-md text-green-500 pl-2'>R$ 119,60</span>
-            </span>
+        <Gallery srcImage={Forza} Name={'Forza Horizon 5'} Price={249.99} />
 
-          </div>
-        </div>
-        <div>
-          <img src={Forza} width="230" />
-          <p>Forza Horizon 5</p>
-          <span> R$249,00</span>
-        </div>
-
-        <div>
-          <img src={Truck} width="230" />
-          <p>American Truck Simulator</p>
-          <span> R$49,99</span>
-        </div>
+        <Gallery srcImage={Truck} Name={'American Truck Simulator'}
+          Price={49.99} />
       </div>
     </div >
   )
